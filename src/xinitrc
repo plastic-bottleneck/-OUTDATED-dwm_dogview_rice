@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Misc
+picom -f &
+feh --bg-fill $HOME/pix/wal/wal2.png &
+sxhkd &
+
+# Clock
+while true; do
+    xsetroot -name " $(cat /sys/class/power_supply/BAT0/capacity)$(echo %)$(date +" %R ")"
+    sleep 1m
+done &
+
+# Start dwm
+exec dwm

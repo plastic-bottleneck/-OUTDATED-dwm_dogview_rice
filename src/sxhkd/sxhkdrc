@@ -1,0 +1,17 @@
+super + w
+	librewolf-bin
+
+super + e
+	alacritty -e ranger
+
+super + s
+	slock
+
+super + z
+	doas xbacklight -dec 20
+
+super + x
+	doas xbacklight -inc 20
+
+super + @space
+	flameshot gui
